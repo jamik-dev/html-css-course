@@ -36,13 +36,42 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 32px;
         margin: 40px;
 
         /* FLEXBOX */
         display: flex;
         align-items: center;  /* vertically */
         justify-content: center;  /* horizontally */
+        gap: 10px;
+      }
+
+      .el {
+        /* DEFAULTS */
+        /* flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+
+        /* flex-basis: 300px; /* element's width should be at least 100px if there is a space */
+        /* flex-shrink: 0; /*if there is no more space for basis, it will overflow container and sets width based on basis
+        /* flex-grow: 1; /* it grows all element's size if there is some space left to fill it out */
+      
+        flex: 1;
+      }
+
+      .el--1 {
+        align-self: flex-start;
+        /* order: 2; */
+        /* flex-grow: 2; /* takes space if there is any left, if it's value 2 then it will take double left space */
+      }
+
+      .el--5 {
+        align-self: stretch;
+        order: 1;
+      }
+
+      .el--6 {
+        order: -1;
       }
     </style>
   </head>
@@ -53,9 +82,9 @@
       <div class="el el--3">CSS</div>
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
-      <div class="el el--6">languages</div>
-      <div class="el el--7">to</div>
-      <div class="el el--8">learn</div>
+      <!-- <div class="el el--6">languages</div> -->
+      <!-- <div class="el el--7">to</div>
+      <div class="el el--8">learn</div> -->
     </div>
   </body>
 </html>
