@@ -272,8 +272,8 @@ nav p {
 } */
 
 /* .author { */
-  /* padding-left: 80px; */
-  /* float: left;
+/* padding-left: 80px; */
+/* float: left;
   margin-top: 10px;
   margin-left: 20px; */
 /* } */
@@ -352,4 +352,26 @@ footer {
   font-size: 14px;
   font-weight: normal;
   font-style: italic;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 75px; 
+  margin-bottom: 60px;
+}
+
+article {
+  /* flex: 0 0 825px; */
+  flex: 1;
+  margin-bottom: 0;
+}
+
+aside {
+  /* DEFAULTS */
+  /* flex-grow: 0;
+     flex-shrink: 1;
+     flex-basis: auto;
+  */
+  flex: 0 0 300px;
 }
