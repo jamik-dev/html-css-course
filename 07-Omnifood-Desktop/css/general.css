@@ -27,7 +27,7 @@ Paragraph default: 1.6
 - Tints: #fdf2e9, #fae5d3
 - Shades: #cf711f
 - Accents:
-- Greys: #555. #333
+- Greys: #555, #333, #6f6f6f
 
 --- 05 ShADOWS
 
@@ -79,6 +79,15 @@ body {
   display: grid;
   row-gap: 9.6rem;
   column-gap: 6.4rem;
+  /* margin-bottom: 9.6rem; */
+}
+
+/* .grid:last-child {
+  margin-bottom: 0; 
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {
@@ -185,6 +194,26 @@ body {
 .btn--outline:active {
   background-color: #e67e22;
   color: #fff;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
 }
 
 /* HELPER/SETTINGS CLASSES */
